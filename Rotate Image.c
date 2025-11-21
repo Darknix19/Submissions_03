@@ -19,19 +19,26 @@ void rotate(int matrix[][20], int n) {
 
 int main() {
     int n;
+    printf("Enter the size of the square matrix (n x n): ");
     scanf("%d", &n);
+
     int matrix[20][20];
+    printf("Enter the elements of the matrix row by row:\n");
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             scanf("%d", &matrix[i][j]);
         }
     }
+
     rotate(matrix, n);
+
+    printf("Matrix after 90-degree clockwise rotation:\n");
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             printf("%d ", matrix[i][j]);
         }
         printf("\n");
     }
+
     return 0;
 }
