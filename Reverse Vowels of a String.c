@@ -23,11 +23,12 @@ void reverseVowels(char *s) {
 }
 
 int main() {
-    char s[300005];
-    scanf("%s", s);
-  
+    char s[50];
+    printf("Enter a string: ");
+    scanf("%[^\n]s", s);
+
     reverseVowels(s);
-  
-    printf("%s\n", s);
+
+    printf("String after reversing vowels: %s\n", s);
     return 0;
 }
